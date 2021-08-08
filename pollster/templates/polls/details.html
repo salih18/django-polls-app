@@ -1,0 +1,21 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+<h1 class="text-center mb-3">Question Details</h1>
+
+{% if question %}
+
+
+<div class="card mb-3">
+      <div class='card-body'>
+            <p class='lead'>
+                {{question.question_text}}
+            </p>
+      </div>
+</div>
+
+{% else %}
+<p>No question available</p>
+{% endif %}
+{% endblock %}
